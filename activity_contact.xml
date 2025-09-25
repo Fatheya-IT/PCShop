@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/s">
+    <include
+        layout="@layout/logo_header"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/homeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Us"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        android:paddingTop="100dp"
+        android:paddingBottom="50dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openTwitter"
+        android:text="Contact via Twitter (X)"
+        android:backgroundTint="@color/g"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openFacebook"
+        android:text="Contact via Facebook"
+        android:backgroundTint="@color/g"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="openInstagram"
+        android:text="Contact via Instagram"
+        android:backgroundTint="@color/g"/>
+
+    <Button
+        android:layout_width="191dp"
+        android:layout_height="wrap_content"
+        android:onClick="openEmail"
+        android:text="Send us an Email"
+        android:backgroundTint="@color/g"/>
+
+
+    <include
+        android:id="@+id/top_nav"
+        layout="@layout/top_nav"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</LinearLayout>

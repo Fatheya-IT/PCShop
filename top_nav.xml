@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:gravity="bottom|center_horizontal"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    >
+
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/search"
+        android:backgroundTint="@color/d"
+        android:backgroundTintMode="multiply"
+        android:contentDescription="Gallery"
+        android:onClick="goGallery" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/cart"
+        android:backgroundTint="@color/d"
+        android:backgroundTintMode="multiply"
+        android:contentDescription="Cart"
+        android:onClick="goCart" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTintMode="multiply"
+        android:background="@drawable/home"
+        android:backgroundTint="@color/d"
+        android:contentDescription="Home"
+        android:onClick="goHome" />
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTintMode="multiply"
+        android:backgroundTint="@color/d"
+        android:background="@drawable/twitter"
+        android:contentDescription="contact"
+        android:onClick="goConatct" />
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:backgroundTintMode="multiply"
+        android:backgroundTint="@color/d"
+        android:background="@drawable/mail"
+        android:contentDescription="about"
+        android:onClick="goAbout" />
+</LinearLayout>
